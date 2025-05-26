@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class F2 {
 
-    // String array declared at the top (as per instruction)
+    
     static String[] words = {
         "Aaron", "Caleb", "Alice", "Daniel", "Emma", "Alexander", "Benjamin", "Brianna", "Diana", "Elijah",
         "Joshua", "Katherine", "Gabriel", "Leah", "Grace", "Kevin", "Charlotte", "Hannah", "Isaac", "Liam",
@@ -11,7 +11,7 @@ public class F2 {
         "Zachary", "Mia", "Uriel", "Xander", "Vanessa", "Zoe", "Nathan", "Victor", "William"
     };
 
-    // Merge Sort for Strings
+ 
     public static void mergeSort(String[] array, int left, int right) {
         if (left < right) {
             int mid = (left + right) / 2;
@@ -44,7 +44,7 @@ public class F2 {
         }
     }
 
-    // Quick Sort for Strings
+    
     public static void quickSort(String[] array, int low, int high) {
         if (low < high) {
             int pi = partition(array, low, high);
@@ -73,7 +73,7 @@ public class F2 {
         return i + 1;
     }
 
-    // Main Method
+    
     public static void main(String[] args) {
         // Merge Sort
         String[] mergeSorted = Arrays.copyOf(words, words.length);
@@ -81,7 +81,6 @@ public class F2 {
         System.out.println("Merge Sort Result:");
         System.out.println(Arrays.toString(mergeSorted));
 
-        // Quick Sort
         String[] quickSorted = Arrays.copyOf(words, words.length);
         quickSort(quickSorted, 0, quickSorted.length - 1);
         System.out.println("\nQuick Sort Result:");
